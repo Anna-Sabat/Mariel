@@ -152,7 +152,7 @@ ol {
 .section-studio {
     background-image: url(..//images/backround.jpg);
     width: 720px;
-    height: 440px;
+    height: 390px;
     background-repeat: no-repeat;
     position: absolute;
     top: 86px;
@@ -187,3 +187,27 @@ ol {
 }
 
 
+
+/*---------------НАША КОМАНДА---------------*/
+
+.our-team {
+    background-color: #f6f1f3;
+}
+
+.our {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #5e5e5e;
+    margin-bottom: 72px;
+    
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 8px;
+}
