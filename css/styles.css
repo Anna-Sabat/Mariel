@@ -115,18 +115,24 @@ ol {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-header:hover + .address,
-.icon-header:focus + .address {
+.address:hover,
+.address:focus{
+    color: #f4a8c9;
     fill: #f4a8c9;
 }
 
-.header-icon {
+.address:hover + .icon-header,
+.address:focus + .icon-header {
+    fill:  #f4a8c9;
+}
+
+.icon-instagram {
     margin-right: 40px;
     fill: #5e5e5e;
 }
 
-.header-icon:hover,
-.header-icon:focus {
+.icon-instagram:hover,
+.icon-instagram:focus {
     fill: #f4a8c9;
 }
 
