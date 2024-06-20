@@ -91,9 +91,6 @@ ol {
     color: #f4a8c9;
 }
 
-.contacts {
-
-}
 
 .address-list {
     font-family: sans-serif;
@@ -120,6 +117,16 @@ ol {
 
 .address:hover>svg,
 .address:focus>svg {
+    fill: #f4a8c9;
+}
+
+.header-icon {
+    margin-right: 40px;
+    fill: #5e5e5e;
+}
+
+.header-icon:hover,
+.header-icon:focus {
     fill: #f4a8c9;
 }
 
