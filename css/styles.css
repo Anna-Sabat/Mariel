@@ -82,7 +82,6 @@ ol {
     color: #5e5e5e;
     padding: 24px 0;
     display: block;
-    width: calc((100% -72px) / 4);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -116,28 +115,25 @@ ol {
 }
 
 .address:hover,
-.address:focus{
+.address:focus {
     color: #f4a8c9;
-    fill: #f4a8c9;
 }
 
 .address:hover + .icon-header,
 .address:focus + .icon-header {
     fill:  #f4a8c9;
+    color: #f4a8c9;
 }
 
 .icon-instagram {
     margin-right: 40px;
     fill: #5e5e5e;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-instagram:hover,
 .icon-instagram:focus {
     fill: #f4a8c9;
-}
-
-.section {
- padding-top: 120px;
 }
 
 .studio-title {
@@ -223,4 +219,27 @@ ol {
     display: flex;
     flex-wrap: wrap;
     gap: 24px 8px;
+}
+
+
+
+
+/*-------------ПОСЛУГИ--------*/
+
+
+.services-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-our {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #5e5e5e;
+    text-decoration: none;
 }
