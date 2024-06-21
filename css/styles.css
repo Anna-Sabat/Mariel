@@ -197,19 +197,23 @@ nav ul li ul:hover > li  {
 }
 
 .studio-section {
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .studio {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(249, 246, 248, 0.7), rgba(170, 171, 178, 0.7)), url(..//images/beautiful-roses-leaves.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
 }
 
 .studio-box {
     display: block;
-    justify-content: center;
-}
+}   
 
 .studio-title {
     font-weight: 700;
@@ -263,7 +267,7 @@ nav ul li ul:hover > li  {
 
 .studio-btn:hover,
 .studio-btn:focus {
-    color: #f4a8c9;
+    color: #f489b8;
     background-color: #edd1dd;
 }
 
@@ -300,17 +304,21 @@ nav ul li ul:hover > li  {
 
 
 .services-box {
-    display: flex;
+    display: inline-block;
 }
 
-.services-our {
+.our-services {
+    text-align: center;
+}
+
+.services-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #5e5e5e;
+    margin-bottom: 72px;
 }
 
 .services-list {
