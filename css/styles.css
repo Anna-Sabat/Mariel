@@ -362,10 +362,8 @@ nav ul li ul:hover > li  {
     border-top-right-radius: 6px;
 }
 
-
-
 .overlay {
-    padding: 40px 32px;
+    padding: 10px 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -399,4 +397,8 @@ nav ul li ul:hover > li  {
 
 .services-item:focus .overlay {
     transform: translateY(0);
+}
+
+.overlay-title {
+    text-align: center;
 }
