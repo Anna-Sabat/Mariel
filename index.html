@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua-UA">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400, 500, 700&family=Playfair+Display:wght@400, 500, 700&"
+      href="https://fonts.googleapis.com/css2?family=Playwrite+SK&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -17,20 +17,45 @@
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo" href="./index.html">
-            <img src="./images/logo.jpg" width="80" height="50" />
+            <img
+              src="./images/logo.jpg"
+              alt="Логотип МАРІЕЛЬ"
+              width="80"
+              height="50"
+            />
           </a>
           <ul class="menu">
             <li class="menu-list">
               <a class="menu-link" href="./index.html">Головна</a>
             </li>
             <li class="menu-list">
-              <a href="#header-services" class="menu-link" href="">Послуги</a>
+              <a href="#header-services" class="menu-link"
+                >Послуги &bigtriangledown;</a
+              >
+              <ul class="header-list">
+                <li class="header-item"><a href="#">Догляд за волоссям</a></li>
+                <li class="header-item"><a href="#">Візаж</a></li>
+                <li class="header-item"><a href="#">Манікюр&Педикюр</a></li>
+                <li class="header-item"><a href="#">Косметологія</a></li>
+                <li class="header-item"><a href="#">Масаж</a></li>
+              </ul>
             </li>
             <li class="menu-list">
-              <a class="menu-link" href="">Прайс</a>
+              <a class="menu-link" href="">Курси &bigtriangledown;</a>
+              <ul class="header-list kurs">
+                <li class="header-item"><a href="#">Зачіски</a></li>
+                <li class="header-item"><a href="#">"Гель лак"</a></li>
+                <li class="header-item">
+                  <a href="#">"Make up" &bigtriangledown;</a>
+                  <ul>
+                    <li><a href="#">Сам собі візажист</a></li>
+                    <li><a href="#">"Make up artist"</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="menu-list">
-              <a class="menu-link" href="">Курси</a>
+              <a class="menu-link" href="">Наші роботи</a>
             </li>
           </ul>
         </nav>
@@ -60,19 +85,25 @@
       </div>
     </header>
     <main>
-      <section class="section">
-        <div class="container studio-text">
-          <h1 class="studio-title">ВАС ВІТАЄ САЛОН КРАСИ МАРІЕЛЬ</h1>
-          <p class="studio-promotion">
-            Подаруйте собі благородне задоволення, занурившись в позитивну
-            енергетику краси, здоров'я і творчості.
-          </p>
-          <button class="studio-btn" type="button">ЗАПИС ОНЛАЙН</button>
+      <section class="studio-section">
+        <div class="container studio">
+          <div class="studio-box">
+            <h1 class="studio-title">ВАС ВІТАЄ САЛОН КРАСИ МАРІЕЛЬ</h1>
+            <p class="studio-promotion">
+              Подаруйте собі благородне задоволення, занурившись в позитивну
+              енергетику краси, здоров'я і творчості.
+            </p>
+            <button class="studio-btn" type="button">ЗАПИС ОНЛАЙН</button>
+          </div>
+          <img
+            class="studio-img"
+            src="./images/backround.jpg"
+            alt="Фото салону"
+          />
         </div>
-        <div class="section-studio"></div>
       </section>
 
-      <!----------------------НАША КОМАНДА------------------->
+      <!----------НАША КОМАНДА-------------->
       <section class="section our-team">
         <div class="container">
           <h2 class="our">НАША КОМАНДА</h2>
@@ -84,7 +115,6 @@
                 src="./video/Oksana-director.mov"
                 autoplay
                 loop
-                alt="video-Oksana-director"
                 poster=""
               ></video>
             </li>
@@ -95,7 +125,6 @@
                 src="./video/Masha.mov"
                 autoplay="autoplay"
                 loop
-                alt="video-Mariia"
                 poster=""
               ></video>
             </li>
@@ -106,7 +135,6 @@
                 src="./video/Marina.mov"
                 autoplay
                 loop
-                alt="video-Marina"
                 poster=""
               ></video>
             </li>
@@ -117,7 +145,6 @@
                 src="./video/Olga.mov"
                 autoplay
                 loop
-                alt="video-Olga"
                 poster=""
               ></video>
             </li>
@@ -128,7 +155,6 @@
                 src="./video/Oksana.mov"
                 autoplay
                 loop
-                alt="video-Oksana"
                 poster=""
               ></video>
             </li>
@@ -139,7 +165,6 @@
                 src="./video/Yaroslav.mov"
                 autoplay
                 loop
-                alt="video-Yaroslav"
                 poster=""
               ></video>
             </li>
