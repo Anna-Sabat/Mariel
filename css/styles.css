@@ -154,7 +154,8 @@ nav ul li ul:hover > li  {
     font-family: sans-serif;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 4px;
+    flex-direction: column;
     
 }
 
@@ -186,14 +187,13 @@ nav ul li ul:hover > li  {
 }
 
 .icon-instagram {
-    margin-right: 40px;
     fill: #5e5e5e;
-    transition: 0.3s;
 }
 
 .icon-instagram:hover,
 .icon-instagram:focus {
     fill: #f4a8c9;
+    transition: 0.3s;
 }
 
 .studio-section {
@@ -580,12 +580,12 @@ nav ul li ul:hover > li  {
 
 
 
-.our-services {
+.certificates {
     text-align: center;
 }
 
 
-.courses-title {
+.certificates-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
