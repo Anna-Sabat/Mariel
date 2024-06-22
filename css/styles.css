@@ -299,17 +299,139 @@ nav ul li ul:hover > li  {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    margin: 0 80px;
+    gap: 24px;
+    margin: 0 40px;
+}
 
+.team-item {
+    border: 1px solid #f3c8da;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    width: calc((100%-13px) / 6);
 }
 
 .team-item:hover,
 .team-item:focus {
+    border-radius: 8px;
     border: 1px solid #f4a8c9;
     background-color: #edd1dd;
     transform: scale3d(1.1, 1.1, 1.1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.our-services {
+    text-align: center;
+}
+
+
+.our-overlay-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #5e5e5e;
+    margin-bottom: 72px;
+}
+
+.our-team-overlay {
+    padding: 10px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #111111;
+
+    background-image: linear-gradient(to bottom, rgb(248, 225, 239), rgba(170, 171, 178, 0.7));
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 86%;
+    overflow: auto;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-accent {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #5e5e5e;
+    text-align: left;
+}
+
+.our-text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #5e5e5e;
+    text-align: center;
+}
+
+
+.our-btn {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 400;
+    background-color: #f7e7e7;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #5e5e5e;
+    display: block;
+    align-items: center;
+    min-width: 26px;
+    height: 26px;
+    border: 1px solid #f4a8c9;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 12px auto;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.our-btn:hover,
+.our-btn:focus {
+    color: #f489b8;
+    background-color: #edd1dd;
+}
+
+
+.team-item:hover .our-team-overlay {
+    transform: translateX(0);
+}
+
+.team-item:focus .our-team-overlay {
+    transform: translateX(0);
+}
+
+.our-overlay-title {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.overlay-item {
+    font-size: 14px;
+    padding-left: 8px;
+    padding-top: 4px;
+    border-radius: 4px;
+    background-color: #e0c5debf;
+    border: 1px solid rgba(113, 112, 112, 0.2);
+}
+
+.overlay-item:hover,
+.overlay-item:focus {
+    background-color: #fbf0f0;
+    color: #090809;
 }
 
 
