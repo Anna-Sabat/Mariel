@@ -111,7 +111,6 @@ header nav ul li a:hover,
 header nav ul li a:focus {
     background-color: #fbf0f0;
     color: #f4a8c9;
-
 }
 
 nav ul li ul { 
@@ -368,9 +367,9 @@ nav ul li ul:hover > li  {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #5e5e5e;
+    color: #111111;
 
-    background-color: #edd1dd;
+    background-image: linear-gradient(to bottom, rgb(248, 225, 239), rgba(170, 171, 178, 0.7));
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     position: absolute;
@@ -401,4 +400,45 @@ nav ul li ul:hover > li  {
 
 .overlay-title {
     text-align: center;
+    margin: 0;
+}
+
+.overlay-item {
+    padding-left: 8px;
+    padding-top: 4px;
+    border-radius: 4px;
+    background-color: #e0c5debf;
+    border: 1px solid rgba(113, 112, 112, 0.2);
+}
+
+.overlay-item:hover,
+.overlay-item:focus {
+    background-color: #fbf0f0;
+    color: #090809;
+}
+
+.services-btn {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 400;
+    background-color: #f7e7e7;
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #5e5e5e;
+    display: block;
+    align-items: center;
+    min-width: 80px;
+    height: 24px;
+    border: 1px solid #f4a8c9;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 2px;
+}
+
+
+.services-btn:hover,
+.services-btn:focus {
+    color: #f489b8;
+    background-color: #edd1dd;
 }
