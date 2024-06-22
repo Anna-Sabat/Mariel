@@ -402,7 +402,7 @@ nav ul li ul:hover > li  {
 .our-btn:hover,
 .our-btn:focus {
     color: #f489b8;
-    background-color: #edd1dd;
+    background-color: #f6eff2;
 }
 
 
@@ -573,4 +573,25 @@ nav ul li ul:hover > li  {
 .services-btn:focus {
     color: #f489b8;
     background-color: #edd1dd;
+}
+
+
+
+
+
+
+.our-services {
+    text-align: center;
+}
+
+
+.courses-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #5e5e5e;
+    margin-bottom: 72px;
 }
