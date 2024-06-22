@@ -62,6 +62,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .navigation {
@@ -187,7 +188,7 @@ nav ul li ul:hover > li  {
 .icon-instagram {
     margin-right: 40px;
     fill: #5e5e5e;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.3s;
 }
 
 .icon-instagram:hover,
