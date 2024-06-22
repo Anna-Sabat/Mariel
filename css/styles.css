@@ -436,6 +436,47 @@ nav ul li ul:hover > li  {
 
 
 
+
+/*---------МІСІЯ--------*/
+
+
+
+.misiya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.misiya-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.misiya-img {
+    margin: 0 100px;
+}
+
+.misiya-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #5e5e5e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.misiya-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #5e5e5e;
+    text-align: left;
+}
+
 /*-------------ПОСЛУГИ-------*/
 
 
@@ -577,8 +618,7 @@ nav ul li ul:hover > li  {
 
 
 
-
-
+/*---------СЕРТИФІКАТИ--------*/
 
 .certificates {
     text-align: center;
@@ -594,4 +634,28 @@ nav ul li ul:hover > li  {
     text-transform: capitalize;
     color: #5e5e5e;
     margin-bottom: 72px;
+}
+
+
+
+
+
+
+
+
+.footer-back {
+   width: 100%;
+   height: 400px;
+   background-image: url(..//images/footer-back-img.jpg); 
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #5e5e5e;
+    padding-top: 40px;
 }
