@@ -3,6 +3,8 @@
 *::after {
     box-sizing: border-box;
     transition: 0.3s;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -456,7 +458,7 @@ nav ul li ul:hover > li  {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, rgba(170, 171, 178, 0.7), rgb(248, 225, 239)), url(../images/footer-back.jpg);
+    background-image:  url(../images/footer-back.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -470,7 +472,11 @@ nav ul li ul:hover > li  {
 }
 
 .misiya-img {
-    margin: 0 100px;
+    margin: 20px 150px 150px 20px;
+}
+
+.misiya-container {
+   padding-top: 300px; 
 }
 
 .misiya-title {
@@ -481,7 +487,7 @@ nav ul li ul:hover > li  {
     text-transform: capitalize;
     color: #5e5e5e;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .misiya-text {
@@ -501,6 +507,7 @@ nav ul li ul:hover > li  {
 /*-------------ПОСЛУГИ-------*/
 
 .services-box {
+    background-color: #f6f1f3;
     display: inline-block;
 }
 
@@ -518,8 +525,6 @@ nav ul li ul:hover > li  {
     display: flex;
     align-items: flex-end;
     padding-left: 140px;
-    border-bottom: 3px solid #bbabb2;
-    background-color: #f6f1f3;
     gap: 15px;
 }
 
@@ -529,13 +534,13 @@ color: #f489b8;
 }
 
 .korona {
-    position: relative;
+    padding-top: 60px;
 }
 
 
 .services-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 24px 20px;
     margin-top: 72px;
 }
@@ -705,6 +710,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYA
 /*---------СЕРТИФІКАТИ--------*/
 
 .certificates {
+    background-color: #f6f1f3;
     text-align: center;
 }
 
@@ -729,16 +735,13 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYA
 
 .footer-back {
     display: flex;
-   width: 100%;
+    width: 100%;
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    background-image: url(../images/footer-back-img.jpg); 
 }
 
-.footer-box {
-    
-}
 
 .footer-text {
     font-weight: 400;
@@ -747,12 +750,11 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYA
     letter-spacing: 0.02em;
     color: #5e5e5e;
     text-align: center;
-    margin: 0;
 }
 
 .animated {
     font-size: 30px;
-    color: #ec3481e4;
+    color: #f489b8;
 }
 
 .footer-title {
@@ -762,7 +764,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYA
     text-align: center;
     letter-spacing: 0.02em;
     color: #5e5e5e;
-    padding: 40px 80px;
+    padding: 120px 80px 40px 80px;
 }
 
 .footer-maps {
@@ -770,27 +772,18 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYA
 }
 
 .footer-social {
-    display: inline-block;
-    align-items: center;
-    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
 }
-
-.footer-logo:hover {
-    transform: scale(1.2);
-}
-
 .footer-inst {
     font-family: serif;
     font-size: 36px;
     color: #f489b8;
-}  
+} 
 
-.footer-inst {
-    fill: #5e5e5e;
-}
-
-.footer-inst:hover,
-.footer-inst:focus {
-    fill: #f4a8c9;
-    transition: 0.3s;
+.footer-box {
+    padding-top: 140px;
+    margin-left: 60px;
 }
