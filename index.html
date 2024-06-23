@@ -127,7 +127,7 @@
               <svg class="icon-header" width="20" height="20">
                 <use href="./images/svg-mariel.svg#icon-location"></use>
               </svg>
-              <a class="address yacor" href="#map">вул. Волошкова, 3б </a>
+              <a class="address" href="#map">вул. Волошкова, 3б </a>
             </li>
             <li class="address-item">
               <svg class="icon-header" width="20" height="20">
@@ -344,13 +344,22 @@
 
       <!-------------------------ПОСЛУГИ------------------------->
 
-      <section class="section services">
+      <section class="services">
         <div class="services-box">
-          <h2 class="our-services">
-            <a href="#" id="header-services" class="services-title"
-              >МИ ДАРУЄМО КРАСУ, ТОМУ МИ РОБИМО ВАС ЩАСЛИВИМИ</a
-            >
-          </h2>
+          <div class="corona-and-text">
+            <h2 class="our-services">
+              <a href="#" id="header-services" class="services-title"
+                >МИ ДАРУЄМО КРАСУ, ТОМУ МИ РОБИМО ВАС ЩАСЛИВИМИ</a
+              >
+            </h2>
+            <img
+              width="120"
+              height="120"
+              class="korona"
+              src="./images/corona.png"
+              alt="фото корона"
+            />
+          </div>
           <ul class="services-list">
             <li class="services-item">
               <img
@@ -702,6 +711,12 @@
               <p class="services-text">Брови &blacktriangle;</p>
             </li>
           </ul>
+          <div class="korona-prev">
+            <i class="qligg-icon-prev"></i>
+          </div>
+          <div class="korona-next">
+            <i class="qligg-icon-next"></i>
+          </div>
         </div>
       </section>
 
@@ -722,6 +737,7 @@
         </p>
       </div>
       <iframe
+        id="map"
         class="footer-maps"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.4773048722504!2d28.521390476995936!3d49.22943917138494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b842d4b8de5%3A0xcf2c82b9011e808!2z0KHQsNC70L7QvSAi0JzQkNCg0IbQldCb0Kwi!5e0!3m2!1suk!2sua!4v1719123288792!5m2!1suk!2sua"
         width="600"
