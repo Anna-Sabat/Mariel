@@ -43,7 +43,7 @@ img {
 }
 
 .container {
-    width: 1158px;
+    max-width: 1440px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -496,7 +496,8 @@ nav ul li ul:hover > li  {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #5e5e5e;
-    text-align: left;
+    text-align: center;
+    padding-right: 40px;
 }
 
 .accent-text {
@@ -508,7 +509,6 @@ nav ul li ul:hover > li  {
 
 .services-box {
     background-color: #f6f1f3;
-    display: inline-block;
 }
 
 .services-title {
@@ -540,16 +540,23 @@ color: #f489b8;
 
 .services-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 24px 20px;
     margin-top: 72px;
+}
+
+.animations {
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: transform ease 1s;
 }
 
 .services-item  {
     border: 1px solid #f3c8da;
     border-radius: 8px;
     position: relative;
-    overflow: hidden;
 }
 
 .services-item:hover,
@@ -656,31 +663,31 @@ color: #f489b8;
     background-color: #edd1dd;
 }
 
-.korona-prev {
+.mariel-prev {
 position: absolute;
 left: 0;
 cursor: pointer;
 }
 
-.korona-next {
+.mariel-next {
 position: absolute;
 right: 0;
 cursor: pointer;
 }
 
-.korona-prev, .korona-next {
+.mariel-prev, .mariel-next {
     width: 50px;
     height: 50px;
     z-index: 999;
 }
 
-.korona-prev:hover,
-.korona-prev:focus {
+.mariel-prev:hover,
+.mariel-prev:focus {
     background-color: #f8c4f1;
 }
 
-.korona-next:hover,
-.korona-next:focus {
+.mariel-next:hover,
+.mariel-next:focus {
     background-color: #f8c4f1;
 }
 
