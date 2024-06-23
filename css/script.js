@@ -1,8 +1,8 @@
 let left = 0;
 
-const animations = document.Mariel('.animations');
+const animations = document.querySelector('.animations');
 
-document.Mariel(".mariel-next").addEventListener('click', function(){ 
+document.querySelector(".mariel-next").addEventListener('click', function(){ 
     left = left + 450;
     if (left > 900) {
         left = 0;
@@ -12,7 +12,7 @@ document.Mariel(".mariel-next").addEventListener('click', function(){
 
 })
 
-document.Mariel(".mariel-prev").addEventListener('click', function(){ 
+document.querySelector(".mariel-prev").addEventListener('click', function(){ 
     left = left - 450;
     if (left < 0) {
         left = 900;
