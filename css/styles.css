@@ -768,3 +768,29 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYA
 .footer-maps {
     padding: 20px;
 }
+
+.footer-social {
+    display: inline-block;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-logo:hover {
+    transform: scale(1.2);
+}
+
+.footer-inst {
+    font-family: serif;
+    font-size: 36px;
+    color: #f489b8;
+}  
+
+.footer-inst {
+    fill: #5e5e5e;
+}
+
+.footer-inst:hover,
+.footer-inst:focus {
+    fill: #f4a8c9;
+    transition: 0.3s;
+}
