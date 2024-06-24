@@ -305,17 +305,12 @@ nav ul li ul:hover > li  {
 
 
 .studio-section {
+    width: 100%;
     padding-top: 80px;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: 50% 50%;
     background-image: linear-gradient(to bottom, rgb(248, 225, 239), rgba(170, 171, 178, 0.7)), url(../images/backround.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
-    z-index: -1;
+    margin: 0 auto;
 }
 
 .studio-box {
@@ -447,7 +442,13 @@ nav ul li ul:hover > li  {
 /*---------------НАША КОМАНДА---------------*/
 
 .our-team {
+    display: flex;
     background-color: #f6f1f3;
+    width: 100%;
+}
+
+.section {
+    padding-top: 40px;
 }
 
 .our {
@@ -458,25 +459,27 @@ nav ul li ul:hover > li  {
     color: #5e5e5e;
     margin-bottom: 24px;
     text-align: center;
-    width: 1000px;
+    max-width: 600px;
     
 }
 
 .our-slogan {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #5e5e5e;
-    text-align: right;
-    margin-bottom: 40px;
+    text-align: center;
+    margin: 0 auto 40px;
+    align-content: center;
+    max-width: 400px;
 }
 
 .team-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin: 0 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
 }
 
 .team-item {
@@ -609,6 +612,63 @@ nav ul li ul:hover > li  {
     background-color: #fbf0f0;
     color: #090809;
 }
+
+
+@media screen and (min-width: 768px) {
+
+.our {
+    text-align: center;
+    width: 1000px;
+    }
+        
+    .our-slogan {
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 800px;
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin: 0 40px 60px;
+    }
+    .our {
+        margin-bottom: 24px;
+        text-align: center;
+        max-width: 100%;
+        }
+    
+    .our-slogan {
+        font-size: 28px;
+        text-align: right;
+        margin-bottom: 40px;
+        max-width: 100%;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
