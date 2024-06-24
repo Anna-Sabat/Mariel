@@ -375,7 +375,7 @@ nav ul li ul:hover > li  {
 
 @media screen and (min-width: 768px) {
 .studio-img {
-    width: 100%;
+    max-width: 100%;
     height: 480px;
     background-repeat: no-repeat;
     margin-left: 120px;
@@ -397,7 +397,8 @@ nav ul li ul:hover > li  {
 
 .studio-img {
     display: flex;
-    margin: 0;
+    margin: 0 auto;
+    padding-bottom: 60px;
     }
 }
 
@@ -444,7 +445,6 @@ nav ul li ul:hover > li  {
 .our-team {
     display: flex;
     background-color: #f6f1f3;
-    width: 100%;
 }
 
 .section {
@@ -457,9 +457,8 @@ nav ul li ul:hover > li  {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #5e5e5e;
-    margin-bottom: 24px;
-    text-align: center;
-    max-width: 600px;
+    margin: 0 24px 24px;
+    text-align: center; 
     
 }
 
@@ -470,9 +469,8 @@ nav ul li ul:hover > li  {
     letter-spacing: 0.02em;
     color: #5e5e5e;
     text-align: center;
-    margin: 0 auto 40px;
+    margin: 0 24px 24px;
     align-content: center;
-    max-width: 400px;
 }
 
 .team-list {
@@ -480,6 +478,7 @@ nav ul li ul:hover > li  {
     flex-direction: column;
     align-items: center;
     gap: 72px;
+    margin-bottom: 60px;
 }
 
 .team-item {
@@ -487,7 +486,6 @@ nav ul li ul:hover > li  {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-    width: calc((100%-13px) / 6);
 }
 
 .team-item:hover,
@@ -618,21 +616,20 @@ nav ul li ul:hover > li  {
 
 .our {
     text-align: center;
-    width: 1000px;
+    margin: 40px;
     }
         
     .our-slogan {
         font-weight: 400;
         font-size: 30px;
         text-align: center;
-        margin-bottom: 40px;
-        max-width: 800px;
+        margin: 40px;
     }
 
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 64px 24px;
+        gap: 64px 60px;
         justify-content: center;
     }
 
@@ -646,30 +643,17 @@ nav ul li ul:hover > li  {
         margin: 0 40px 60px;
     }
     .our {
-        margin-bottom: 24px;
+        margin: 40px 60px 24px;
         text-align: center;
-        max-width: 100%;
         }
     
     .our-slogan {
         font-size: 28px;
         text-align: right;
-        margin-bottom: 40px;
-        max-width: 100%;
+        margin: 40px 24px;
         }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -678,9 +662,9 @@ nav ul li ul:hover > li  {
 
 
 .misiya {
-    width: 100%;
+    max-width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-image:  url(../images/footer-back.jpg);
     display: flex;
@@ -691,27 +675,30 @@ nav ul li ul:hover > li  {
 
 .misiya-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .misiya-img {
-    margin: 20px 150px 150px 20px;
+    align-content: center;
+    margin: 20px auto 40px;
 }
 
 .misiya-container {
-   padding-top: 300px; 
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .misiya-title {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #5e5e5e;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
 }
 
 .misiya-text {
@@ -721,13 +708,79 @@ nav ul li ul:hover > li  {
     letter-spacing: 0.02em;
     color: #5e5e5e;
     text-align: center;
-    padding-right: 40px;
+    margin: 0 40px 40px;
 }
 
 .accent-text {
    color: #f59ac1; 
 
 }
+
+
+
+
+@media screen and (min-width: 768px) {
+    .misiya-img {
+        align-content: center;
+        margin: 15px auto 40px 40px;
+    }
+
+    .misiya-box {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+    }
+
+    .misiya-container {
+      margin-top: 270px;
+    }
+    .misiya-title {
+        font-size: 32px;
+        margin: 0 40% 10px auto;
+    }
+
+    .misiya-text {
+        max-width: 100%;
+        margin: 0 40px 10px 10px;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+
+    .misiya-box {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .misiya-container {
+        margin-top: 270px;
+    }
+
+    .misiya-title {
+        font-size: 32px;
+        margin: 0 auto 20px;
+    }
+
+    .misiya-text {
+        max-width: 100%;
+        margin: 0 40px 20px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 /*-------------ПОСЛУГИ-------*/
 
