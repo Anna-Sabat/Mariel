@@ -513,19 +513,18 @@ nav ul li ul:hover > li  {
 
 .services-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center;
     color: #5e5e5e;
 }
 
 .corona-and-text {
-    height: 97px;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
-    padding-left: 140px;
-    gap: 15px;
 }
 
 .corona-and-text:hover .services-title,
@@ -542,7 +541,7 @@ color: #f489b8;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 24px 20px;
+    gap: 12px;
     margin-top: 72px;
 }
 
@@ -579,6 +578,7 @@ color: #f489b8;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #111111;
+    
 
     background-image: linear-gradient(to bottom, rgb(248, 225, 239), rgba(170, 171, 178, 0.7));
     border-top-left-radius: 6px;
@@ -678,7 +678,7 @@ cursor: pointer;
 .mariel-prev, .mariel-next {
     width: 50px;
     height: 50px;
-    z-index: 999;
+    z-index: 97;
 }
 
 .mariel-prev:hover,
@@ -724,13 +724,12 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYA
 
 .certificates-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #5e5e5e;
-    margin-bottom: 72px;
 }
 
 
@@ -793,4 +792,236 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYA
 .footer-box {
     padding-top: 140px;
     margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+.modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    width: 408px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+    opacity: 1; 
+    pointer-events: auto;
+}
+
+.btn-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    border-radius: 50%;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+    background-color: #f869c6;
+    border: none;
+}
+
+
+.btn-modal:hover>svg,
+.btn-modal:focus>svg {
+    fill: #fff;
+}
+
+.modal-text {
+    display: flex;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    height: 24px;
+    color: #5e5e5e;
+    margin-bottom: 16px;
+}
+
+.modal-svg {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-field {
+    margin-bottom: 8px;
+}
+
+.modal-field-wrap {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+.modal-icon {
+    fill: #2e2f42;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input {
+    padding-left: 40px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    gap: 8px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-input:focus {
+    border-color: #4D5AE5;
+    fill: #4D5AE5;
+}
+
+.modal-input:focus+.modal-icon {
+    fill: #4d5ae5;
+}
+
+.form-input::placeholder {
+    color: #fff;
+}
+
+.modal-comment {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    padding-left: 24px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    padding: 8px 16px;
+    width: 360px;
+    height: 120px;
+    color: rgba(46, 47, 66, 0.4);
+    ;
+    resize: none;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-comment:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-field {
+    margin-bottom: 8px;
+}
+
+.modal-field-comment {
+    margin-bottom: 16px;
+}
+
+.modal-check-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.modal-check:checked+.modal-check-text .checkbox-icon {
+    background-color: #404bbf;
+    fill: #f4f4fd;
+    border: none;
+}
+
+.checkbox-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+}
+
+.privacy-policy {
+    line-height: 133%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4D5AE5;
+    padding-left: 4px;
+
+}
+
+.modal-btn {
+    font-family: "Roboto", sans-serif;
+    background-color: #4d5ae5;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    color: #fff;
+    display: block;
+    align-items: center;
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 24px auto 0 auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
