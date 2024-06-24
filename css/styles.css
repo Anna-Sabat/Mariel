@@ -43,9 +43,29 @@ img {
 }
 
 .container {
-    max-width: 1440px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 736px;
+        padding: 0 16px;
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+
+    .section {
+        padding: 120px 0;
+    }
 }
 
 .header {
@@ -64,20 +84,30 @@ img {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 .navigation {
+    display: none;
+}
+
+.logo-mobile {
     display: flex;
-    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #8e8f99;
+    margin-left: 80px;
+    padding: 17px 0;
 }
 
-.logo {
-    margin-right: 60px;
-}
-
-.logo:hover {
+.logo-mobile:hover {
     transform: scale(1.2);
+    color: #090809;
 }
 
 .menu {
@@ -153,12 +183,7 @@ nav ul li ul:hover > li  {
 }
 
 .address-list {
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    flex-direction: column;
-    
+    display: none;  
 }
 
 .address {
@@ -173,7 +198,7 @@ nav ul li ul:hover > li  {
     fill: #5e5e5e;
 }
 
-.icon-header{
+.icon-header {
     fill: #5e5e5e;
 }
 
@@ -182,9 +207,9 @@ nav ul li ul:hover > li  {
     color: #f4a8c9;
 }
 
-.address:hover + .icon-header,
-.address:focus + .icon-header {
-    fill:  #f4a8c9;
+.address:hover+.icon-header,
+.address:focus+.icon-header {
+    fill: #f4a8c9;
     color: #f4a8c9;
 }
 
@@ -198,42 +223,123 @@ nav ul li ul:hover > li  {
     transition: 0.3s;
 }
 
-.studio-section {
-    padding-top: 40px;
+.open-menu-btn {
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
 }
 
-.studio {
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navigation{
+        display: flex;
+        gap: 2px;
+        margin: 0;
+    }
+
+    .address-list {
+        display: none
+    }
+    .icon-header {
+        display: none;
+    }    
+    .open-menu-btn {
+        display: none;
+    }
+
+.icon-instagram {
+    display: none;
+}
+
+.logo-mobile {
+    display: none;
+}
+.logo {
+    padding-top: 5px;
+    margin-right: 20px;
+}
+}
+
+
+@media screen and (min-width: 1158px) {
+.header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+}
+
+.logo {
+    padding-top: 5px;
+    margin-right: 40px;
+}
+.logo:hover {
+    transform: scale(1.2);
+}
+ .address-list {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+.icon-instagram {
+    display: flex;
+}
+}
+
+
+
+
+
+
+
+
+.studio-section {
+    padding-top: 80px;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, rgb(248, 225, 239), rgba(170, 171, 178, 0.7)), url(../images/beautiful-roses-leaves.jpg);
+    background-position: 50% 50%;
+    background-image: linear-gradient(to bottom, rgb(248, 225, 239), rgba(170, 171, 178, 0.7)), url(../images/backround.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     
+    z-index: -1;
 }
 
 .studio-box {
-    display: block;
-}   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.studio-img {
+    display: none;
+}
 
 .studio-title {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: #5e5e5e;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
+    text-align: center;
     margin: 0 auto;
+    padding-top: 40px;
+
 }
-
-
 .studio-promotion {
     font-weight: 400;
     font-size: 16px;
@@ -241,34 +347,27 @@ nav ul li ul:hover > li  {
     letter-spacing: 0.02em;
     color: #5e5e5e;
     text-align: center;
-    width: 420px;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
-.studio-img {
-    width: 720px;
-    height: 480px;
-    background-repeat: no-repeat;
-    margin-left: 120px;
-}
 
 .studio-btn {
     font-family: "Dancing Script", sans-serif;
     font-weight: 500;
     background-color: #f7e7e7;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #5e5e5e;
-    display: block;
-    align-items: center;
-    min-width: 169px;
-    height: 56px;
+    min-width: 165px;
+    height: 48px;
     border: 1px solid #f4a8c9;
     border-radius: 8px;
     cursor: pointer;
-    margin: 48px 0;
     transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 48px 120px;
+    align-content: center;
+    margin: 30px auto;
 }
 
 
@@ -276,6 +375,71 @@ nav ul li ul:hover > li  {
 .studio-btn:focus {
     color: #f489b8;
     background-color: #edd1dd;
+}
+
+
+@media screen and (min-width: 768px) {
+.studio-img {
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    margin-left: 120px;
+    }
+.studio-promotion {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #5e5e5e;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    }
+
+.studio-section {
+    background-image: linear-gradient(to bottom, rgb(248, 225, 239), rgba(170, 171, 178, 0.7)), url(../images/beautiful-roses-leaves.jpg);
+    }
+
+.studio-img {
+    display: flex;
+    margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+ .studio-box{
+    display: block;
+ }   
+
+ .studio {
+     display: flex;
+     top: 0;
+     left: 0;
+
+ }
+.studio-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #5e5e5e;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+        margin: 0 auto;
+    }
+.studio-btn {
+    margin: 48px 120px;
+}
+
+.studio-section {
+    background-image: linear-gradient(to bottom, rgb(248, 225, 239), rgba(170, 171, 178, 0.7)), url(../images/beautiful-roses-leaves.jpg);
+}
+
+.studio-img {
+    display: flex;
+    margin-left: 40px;
+}
 }
 
 
