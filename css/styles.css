@@ -84,7 +84,9 @@ img {
 .header-container {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .navigation {
@@ -220,7 +222,6 @@ nav ul li ul:hover > li  {
 .icon-instagram:hover,
 .icon-instagram:focus {
     fill: #f4a8c9;
-    transition: 0.3s;
 }
 
 .open-menu-btn {
@@ -229,6 +230,15 @@ nav ul li ul:hover > li  {
     background-color: transparent;
     cursor: pointer;
     border: none;
+    fill: #f9f9f9;
+    background-color: #f3ecef;
+    border-radius: 4px;
+}
+
+.open-menu-btn:hover,
+.open-menu-btn:focus {
+   background-color: #f7d0e3;
+    transition: 0.3s;
 }
 
 
@@ -332,7 +342,7 @@ nav ul li ul:hover > li  {
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 120px;
 
 }
 .studio-promotion {
