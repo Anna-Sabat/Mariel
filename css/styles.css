@@ -224,6 +224,14 @@ nav ul li ul:hover > li  {
     fill: #f4a8c9;
 }
 
+.header-button-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
 
 @media screen and (min-width: 768px) {
     .header-container {
